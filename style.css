@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Loos;
+  src: url('./fonts/Loos.woff2');
+}
+.model {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body {
+  font-family: Loos, sans-serif;
+  color: black;
+  font-weight: 400;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.mainMenu {
+  position: absolute;
+  width: 15vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  border-right: 0.15vw solid white;
+  background-color: #eeeeee;
+  mix-blend-mode: difference;
+  backdrop-filter: blur(10px);
+}
+.mainMenu > div {
+  padding: 0 1vw;
+  border-bottom: 0.15vw solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainMenu > div:has(ul) > h2 {
+  margin-top: 1vw;
+}
+.mainMenu > div:not(:has(ul)) {
+  justify-content: center;
+}
+.mainMenu li {
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  list-style-type: none;
+  font-weight: 800;
+}
+.mainMenu li:last-child {
+  margin-bottom: 1vw;
+}
+h2 {
+  font-size: 1.5vw;
+}
+.cafe,
+.bookshop {
+  height: 4vw;
+}
+.about,
+.visit,
+.tours {
+  height: calc((100% - 8vw) / 3);
+}
+.listItem {
+  transition: all 1s;
+}
+.mainMenu a {
+  width: 100%;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  transition: all 1s;
+}
+.mainMenu a:hover {
+  text-decoration: underline;
+}
+.mainMenu a:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 2vw;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('https://img.icons8.com/ios/50/right--v1.png');
+  opacity: 0;
+  transition: all 1s;
+}
+
+.mainMenu li:hover a:after,
+.mainMenu h2:hover a:after {
+  opacity: 1;
+  transform: translateX(5px);
+  transition: all 1s;
+}
+.header {
+  position: absolute;
+  width: 40vw;
+  margin: 1vw;
+  aspect-ratio: 9;
+  right: 0;
+  top: 0;
+  background-image: url('./img/Untitled.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+footer {
+  width: 85%;
+  height: 4vh;
+  z-index: 8;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 0.15vw solid black;
+  background-color: #eeeeee;
+  mix-blend-mode: difference;
+  backdrop-filter: blur(10px);
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 5vw;
+  gap: 1vw;
+  border-left: 0.15vw solid black;
+}
+.address {
+  width: calc(100% - 5vw);
+  font-size: 0.8vw;
+  text-align: center;
+  align-content: center;
+}
+.phone,
+.email {
+  width: 1vw;
+  aspect-ratio: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.phone {
+  background-image: url('https://img.icons8.com/ios/50/phone--v1.png');
+}
+.email {
+  background-image: url('https://img.icons8.com/parakeet-line/48/new-post.png');
+}
+
+.theme,
+.bodySection {
+  transition: all 1s;
+}
+.content {
+  width: 50%;
+  position: relative;
+  float: right;
+  display: none;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(250, 250, 250, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  border-left: 0.15vw black solid;
+}
+.content h1 {
+  font-size: 3.5vw;
+  margin-bottom: 1.5vw;
+  padding-top: 1vw;
+  padding-left: 1vw;
+  text-transform: none;
+}
+.content h3 {
+  font-size: 1.5vw;
+  text-transform: none;
+  padding-left: 1vw;
+}
+.content p + h3 {
+  margin-top: 1vw;
+}
+.content p {
+  padding-left: 1vw;
+  width: 95%;
+
+  line-height: 1.3;
+  text-transform: none;
+}
+.content p + p {
+  margin-top: 1vw;
+}
+.content h2 ~ p,
+.content h2 ~ ul {
+  margin-bottom: 2vw;
+}
+.content h2 + .lead {
+  margin-top: 1.5vw;
+}
+.mainMenu > .bookshop {
+  border-bottom: none;
+}
+p.lead {
+  font-size: 1.3vw;
+  font-weight: 600;
+  line-height: 1.5vw;
+}
+.content h2 {
+  padding-left: 1vw;
+  font-size: 2.5vw;
+  text-transform: none;
+  line-height: 2.8vw;
+  margin-bottom: 1vw;
+}
+.content ul {
+  padding-left: 1vw;
+  margin-left: 1.5vw;
+}
+.content li {
+  text-transform: none;
+}
+.content ul {
+  margin-bottom: 1vw;
+}
+.contentHeader {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  border-bottom: 0.15vw solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+.contentHeader > .header {
+  width: 30%;
+  margin: 0;
+  position: relative;
+  margin-right: 1vw;
+}
+.contentButton {
+  height: 50%;
+  margin-left: 1vw;
+  aspect-ratio: 1;
+  border: 0.15vw black solid;
+  border-radius: 100%;
+  transition: all 0.4s;
+}
+.buttonIcon {
+  background-image: url('img/Group\ 24.svg');
+  background-size: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.contentButton:hover {
+  filter: invert(1);
+  background-color: white;
+  border: 0.15vw rgba(250, 250, 250, 0.7) solid;
+  transition: all 0.4s;
+}
+.bodySection {
+  overflow-y: scroll;
+  height: 92vh;
+  padding-bottom: 8vh;
+}
+
+.visible {
+  display: block;
+  transition: all 1s;
+}
+.none {
+  display: none;
+  transition: all 1s;
+}
+.active {
+  background-color: black;
+  transition: all 1s;
+}
+.active a {
+  transition: all 1s;
+  color: white;
+}
+.active a:after {
+  filter: invert(1);
+  transition: all 1s;
+}

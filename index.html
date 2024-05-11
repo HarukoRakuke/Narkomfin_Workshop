@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+          "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+          "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js",
+          "RGBELoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/RGBELoader.js"
+        }
+      }
+    </script>
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="model"></div>
+    <div class="header"></div>
+    <nav class="mainMenu">
+      <div class="about listItem">
+        <h2><a href="#about">About</a></h2>
+        <ul>
+          <li><a href="#about1">the narkomfin building</a></li>
+          <li><a href="#about2">history</a></li>
+        </ul>
+      </div>
+      <div class="visit listItem">
+        <h2><a href="#visit">Visit</a></h2>
+        <ul>
+          <li><a href="#visit1">how to get there</a></li>
+          <li><a href="#visit2">garage card and patrons</a></li>
+          <li><a href="#visit3">host and events</a></li>
+        </ul>
+      </div>
+      <div class="tours listItem">
+        <h2><a href="#tours">Tours</a></h2>
+        <ul>
+          <li>
+            <a
+              href="https://garagemca.zapomni.ru/events/5681bd07-0b9b-45db-8105-2d2c50a49986"
+              >buy tickets</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="cafe listItem">
+        <h2><a href="#cafe">Cafe</a></h2>
+      </div>
+      <div class="bookshop listItem">
+        <h2><a href="#bookshop">Bookshop</a></h2>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="contentHeader">
+        <div class="contentButton">
+          <div class="buttonIcon"></div>
+        </div>
+        <div class="header"></div>
+      </div>
+      <div class="bodySection">
+        <div id="about" class="none theme">
+          <h1>About the Narkomfin Building</h1>
+          <h2 id="about1">About the Project</h2>
+          <p>
+            The Narkomfin Building is an institutional and research project of
+            Garage Museum of Contemporary Art. The Museum team is studying both
+            the architectural significance of the building and the life stories
+            of its creators and inhabitants over a period of 100 years. The
+            knowledge generated will form the basis of tour itineraries,
+            publications, and various public and education projects constructed
+            around this legendary building. In addition, residents of the
+            building, Museum patrons, and GARAGE cardholders have access to
+            Narkomfin Café, and a book shop has opened on the first floor of the
+            residential block.
+          </p>
+          <h2 id="about2">History of the building</h2>
+          <p class="lead">
+            The residential building created for staff of the Ministry of
+            Finance of the RSFSR, which is now known as the Narkomfin Building,
+            is one of the best-known experimental constructions in the USSR of
+            the late 1920s and early 1930s.
+          </p>
+          <p>
+            The history of the building’s construction is closely connected with
+            social processes taking place in the first decades of the USSR’s
+            existence. Representatives of various professions were tasked with
+            educating the new Soviet citizen, who would speak a new language,
+            live according to the precepts of communism, and, as a result,
+            become a true champion of its ideas. In architecture this led to the
+            creation of house-communes and «transitional type» projects such as
+            the Narkomfin Building. Laundry, childcare, and even residents’
+            leisure activities were all designed to take place in shared spaces
+            and meals were to be served in a communal dining room.
+          </p>
+          <p>
+            However, the Narkomfin Building was famous not so much for its
+            social concept as its unusual architectural solution.
+          </p>
+          <p>
+            The Narkomfin Building was based on designs for apartments developed
+            by staff of the section for typifying residential accommodation of
+            the Construction Committee (STROIKOM) of the RSFSR, headed by Moisei
+            Ginzburg. The architect Alexander Pasternak, brother of the poet
+            Boris Pasternak, became the lead staff member and a close associate
+            of Ginzburg. He was the author of a series of projects for living
+            cells, as compact apartments designed for various types of family
+            were then called.
+          </p>
+          <p>
+            As a result of the section’s work, a decree was issued that
+            recommended various versions of living cells for mass construction
+            and the rest for experimental buildings. The design provided
+            economical but comfortable living accommodation for the time, and
+            natural lighting was also preferred.
+          </p>
+          <p>
+            The few remaining design drawings for the Narkomfin Building—working
+            drawings and blueprint copies—do not entirely match the building as
+            constructed. (In 1934, Ginzburg published the drawings submitted for
+            approval and not the final version.) In particular, in some
+            apartments additional rooms were created and other elements were
+            included that did not feature in the design. However, from the
+            beginning the Narkomfin Building consisted of three blocks: the
+            housekeeping block, the communal block, and the residential block
+            (the unbuilt second project included another housekeeping block and
+            a second residential block).
+          </p>
+        </div>
+        <div id="visit" class="none theme">
+          <h1>Visiting</h1>
+          <p>
+            The communal block of the Narkomfin Building is open to residents,
+            Museum patrons, and GARAGE cardholders, and also those visiting the
+            building as part of a tour.
+          </p>
+          <h2>Hours</h2>
+          <p>Open daily, 10:00–22:00</p>
+          <p>
+            The bookshop on the first floor of the residential block is open to
+            all, daily, 11:00–22:00. To enter, please press “i” on the black
+            stand to the right of the door and wait for the member of staff.
+          </p>
+          <h2 id="visit1">How to get there</h2>
+          <h3>on the metro</h3>
+          <p>
+            We recommend walking to the Narkomfin Buildingfrom Barrikadnaya
+            metro station (Tagansko-Krasnopresnenskaya line). Afterleaving the
+            station, turn right and walk to Barrikadnaya Street. Withoutcrossing
+            the road, turn left and walk to the Garden Ring. At the
+            trafficlights, cross Barrikadnaya Street (toward the square) and
+            walk in the directionof Novy Arbat. After the VEB.RF business
+            center, turn right into MalyKonyushkovsky Pereulok, walk to the end
+            of the building and then cross the roadvia the pedestrian crossing.
+            Turn right and walk ahead a little. You will see atraffic barrier.
+            This is the entry to the Narkomfin Building
+          </p>
+          <p>
+            Walk underneath the residential block to theend. You will see the
+            communal block behind it, with its glazed wall.
+          </p>
+          <h3>by car</h3>
+          <p>
+            There is paid parking on Kudrinskaya Square andNovinsky Bulvar.
+            Please note that the number of spaces is limited, and parkingmay be
+            full at weekends and on holidays.
+          </p>
+          <h3>by bus</h3>
+          <p>
+            The nearest bus stop on the Garden Ring is “Chaliapin House” (buses
+            B, 239, c369, 379).
+          </p>
+          <h2>Visit rules</h2>
+          <p>
+            When planning your visit, please see the rules for visiting the
+            communalblock of the Narkomfin Building.
+          </p>
+          <ul>
+            <li>smoke</li>
+            <li>touch or move the exhibits</li>
+            <li>bring large items of luggage</li>
+            <li>
+              bring firearms or any kind of weapons, explosives, fireworks or
+              gascylinders
+            </li>
+            <li>eat or drink other than in Narkomfin Café</li>
+          </ul>
+          <h2>Additional information</h2>
+          <p>
+            Unfortunately, the communal block of the Narkomfin Building does not
+            have a ramp and is not accessible for wheelchair users.
+          </p>
+          <p>
+            When using mobile phones, please consider the people around you.
+          </p>
+          <p>
+            Personal photography and videography is permitted. Prior permission
+            is necessary to take photographs or film using professional
+            equipment. Please write to info@narkomfin.ru no less than three
+            working days before the shoot.
+          </p>
+          <h2 id="visit2">GARAGE card</h2>
+          <p>
+            GARAGE card is the loyalty program of Garage Museum of Contemporary
+            Art, which manages the communal block of the Narkomfin Building.
+          </p>
+          <p>
+            GARAGE cardholders can access the communal block of the Narkomfin
+            Building and Narkomfin Café, together with up to two friends. They
+            also receive:
+          </p>
+          <ul>
+            <li>15% discount in Garage Café in the Museum building</li>
+            <li>10% discount in Garage Shop in Moscow and St. Petersburg</li>
+            <li>Access to the Garage Rooftop pavilion on Sundays</li>
+            <li>50% discount on the Garage Screen film program</li>
+            <li>15% discount on Walks with Garage</li>
+            <li>And much more</li>
+          </ul>
+          <p>Find out more about the loyalty program here.</p>
+          <p>
+            The loyalty program managers will be happy to tell you more about
+            the program: <br />
+            +7 499 345 10 00 <br />
+            members@garagemca.org
+          </p>
+          <p>
+            Students can buy a card for 2,000 rubles. You can purchase a student
+            card at the information desks at Garage and in the communal block of
+            the Narkomfin Building.
+          </p>
+          <h2>Private Patrons</h2>
+          <p>
+            Private patrons of Garage Museum of Contemporary Artare directly
+            involved in the life and strategic development of the institution.
+            One of the opportunities provided by this status is the possibility
+            to organize meetings and events in the communal block of the
+            Narkomfin Building, at Garage, and in the Education Center in Gorky
+            Park.
+          </p>
+          <p>
+            Our staff will be happy to advise you on ways of supporting Garage
+            and other privileges of the patrons program: <br />
+            +7 495 645 05 20 <br />
+            patronship@garagemca.org
+          </p>
+          <h2 id="visit3">
+            Your event in the Communal Block of the Narkomfin Building
+          </h2>
+          <p>
+            The Communal Block of the Narkomfin Building is a freestanding
+            three-story building with a roof terrace and is connected to the
+            residential block by a gallery. The Communal Block is suitable for
+            events for up to 100 people. The first floor is fully equipped for
+            lectures, seminars, and corporate meetings and also for evening
+            events featuring music. On the third floor of the Communal Block
+            there is a café which is open only for GARAGE cardholders,
+            residents, and Garage patrons and partners.
+          </p>
+          <h2 class="rubricator"></h2>
+          <h3>
+            Events involving the closure of the Communal Block to visitors
+          </h3>
+          <p>
+            This format is suitable for small-scale events. The first floor can
+            be used for an official event, a concert or a DJ set. The café on
+            the third floor can be used for a buffet meal. Your guests will also
+            be invited to take an individual architectural tour of the communal
+            and residential blocks of the Narkomfin Building.
+          </p>
+          <h3>Events on the first floor of the Communal Block</h3>
+          <p>
+            The multifunctional space on the first floor is suitable for
+            small-scale working meetings, lectures or masterclasses and can also
+            be used for coffee breaks and light brunches. Your guests will also
+            be invited to take an individual architectural tour of the communal
+            and residential blocks of the Narkomfin Building.
+          </p>
+          <h3>Getting to know the Narkomfin Building</h3>
+          <p>
+            An individually tailored visit to the Narkomfin Building, including
+            an architectural tour of the communal and residential blocks plus a
+            welcome drink (tea, coffee or sparkling wine) and dessert.
+          </p>
+          <p>
+            If you would like to organize an event in the Communal Block of the
+            Narkomfin Building, please fill in the form.
+          </p>
+          <p>
+            * Events are of a cultural or educational nature and include
+            excursions and creative evenings on the theme of the Building.
+          </p>
+          <p>
+            For questions on partnership <br />
+            partners@garagemca.org
+          </p>
+        </div>
+        <div id="tours" class="none theme">
+          <h1>Tours</h1>
+          <h2>Manifesto for a New Life. The Narkomfin Building</h2>
+          <p class="lead">
+            During the tour, participants will go insidethe building and learn
+            how workers, engineers, and architects experimented withspace, wall
+            color, construction materials, and the number of levels in cell
+            apartments.
+          </p>
+          <p>
+            They will have the opportunity to evaluate the original
+            architectural design and see the results of the restoration of the
+            building, which was completed according to the original drawings.
+            The tour also includes a visit to the Narkomfin café, which is
+            located on the third floor of the communal block.
+          </p>
+          <p>
+            This tour was created by Garage guide Zhanna Sevostyanova in
+            collaboration with the grandson of Moisei Ginzburg, Alexey Ginzburg.
+          </p>
+          <h3>How to take part</h3>
+          <p>Architecture walking tours are not translated into English.</p>
+        </div>
+        <div id="cafe" class="none theme">
+          <h1>Narkomfin Café</h1>
+          <p class="lead">
+            The café is situated on the third floor of the communal block. It is
+            open to residents, patrons, GARAGE cardholders, and those visiting
+            the Narkomfin Building as part of a tour.
+          </p>
+          <p>
+            The menu is based around appetizers, salads, and main dishes made
+            from seasonal produce by chef Igor Kotov, cakes created by pastry
+            chef Lena Nabiullina specially for the Narkomfin Building, and
+            signature keto desserts. The bar menu includes unusual Russian
+            wines, special cocktails, coffee, and tea.
+          </p>
+        </div>
+        <div id="bookshop" class="none theme">
+          <h1>Narkomfin Building Bookshop</h1>
+          <p class="lead">
+            The bookshop is open daily from 11:00 to 20:00. It is on the first
+            floor of the residential block of the building. To enter, press “i”
+            on the black stand to the right of the door and wait for the member
+            of staff.
+          </p>
+          <p>
+            The architecture and color scheme of the bookshop are based on the
+            original design for the space, where from 1931 there was a
+            residential cell which was refitted as a library after 1963. The
+            accent in the interior is the hanging lamp, which is a glass sphere
+            60cm in diameter. It appeared due to the stylistic features of
+            constructivism, which employed various types of hanging lamps rather
+            than ceiling lighting.
+          </p>
+          <p>
+            The bookshop offers hard-to-find publications on the history of
+            constructivism and the avant-garde, books about design and
+            architecture, new titles from the publishing program at Garage, and
+            also Objects Series No. 1, a selection of gifts and stationery
+            designed by the Garage team and inspired by the history of the
+            Narkomfin Building and its architecture. The series includes cards
+            and posters, brass stationery items, mugs and keyrings with the
+            Narkomfin Building logo, and clothing and interior items created in
+            collaboration with Russian designers and creative groups.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="address"><p>NOVINSKY BOULEVARD, 25</p></div>
+      <div class="icons">
+        <div class="phone"></div>
+        <div class="email"></div>
+      </div>
+    </footer>
+  </body>
+</html>

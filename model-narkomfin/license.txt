@@ -1,0 +1,11 @@
+Model Information:
+* title:	The Narkomfin Building
+* source:	https://sketchfab.com/3d-models/the-narkomfin-building-7dd57a1e95d24cb19f8ac275a3d05910
+* author:	Vladimir S (https://sketchfab.com/vladimirsyberia)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "The Narkomfin Building" (https://sketchfab.com/3d-models/the-narkomfin-building-7dd57a1e95d24cb19f8ac275a3d05910) by Vladimir S (https://sketchfab.com/vladimirsyberia) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
